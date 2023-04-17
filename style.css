@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --orange: #ec5242;
+  --dark: #272a31;
+  --grey: #d3d3d3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.lato {
+  font-family: "Lato", sans-serif;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.home-section {
+    padding: 90px 20px;
+    background-image: url(./assets/icons/home-back-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: right 80%;
+    background-size: 110%;
+    display:flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 20px;
+}
+
+.home-hello {
+    color: var(--orange);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.home-title {
+    width: 100%;
+    color: var(--orange);
+    font-size: 28px;
+    letter-spacing: 1px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.home-description {
+    color: var(--dark);
+    background-color: #E0E0E0;
+    border: 3px solid white;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 150%;
+}
+
+.home-place-date {
+    color: var(--dark);
+    display: flex;
+    flex-direction: column;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+}
+
+.location-icon {
+    height: 20px;
+}
+
+.location-description {
+    letter-spacing: -1px;
+    font-weight: 400;
+}
