@@ -26,10 +26,10 @@
 
 .home-section {
   padding: 90px 20px;
-  background-image: url(./assets/icons/home-back-mobile.svg);
+  background-image: url(./assets/img/home-back-efect.png);
   background-repeat: no-repeat;
-  background-position: right 80%;
-  background-size: 90%;
+  background-position: center ;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   gap: 7px;
@@ -63,7 +63,7 @@
 
 .home-description {
   color: var(--dark);
-  background-color: #f3f3f3;
+  background-color: #f7f7f7a5;
   border: 3px solid white;
   padding: 10px;
   font-size: 12px;
