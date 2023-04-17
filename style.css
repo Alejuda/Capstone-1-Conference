@@ -131,6 +131,8 @@ ul {
   letter-spacing: 1px;
   font-weight: 900;
   margin-bottom: 25px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .home-description {
