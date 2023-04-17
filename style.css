@@ -10,6 +10,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+ul {
+  list-style: none;
 }
 
 .lato {
@@ -23,6 +33,67 @@
 .roboto {
   font-family: "Roboto", sans-serif;
 }
+
+/*----------NAV - HAMBURGUER-------------*/
+
+.nav-container {
+  position: fixed;
+  left: -300px;
+  z-index: 500;
+  width: 100vw;
+  max-width: 300px;
+  height: 100vh;
+  border-radius: 0 30px 30px 0 ;
+  background-color: var(--grey);
+  padding: 20px;
+  transition: left 100ms;
+}
+
+.show {
+  left: 0px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  cursor: pointer;
+}
+
+.nav-menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 50px;
+}
+
+.nav-logo {
+  min-width: 80%;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.list-item a {
+  color: var(--dark);
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.nav-campaign {
+  background-color: transparent;
+  border: 3px solid var(--orange);
+  color: var(--orange);
+  padding: 10px 20px;
+  font-weight: 600;
+}
+
+/*----------NAV - HAMBURGUER - FINISH-------------*/
 
 .home-section {
   padding: 90px 20px;
@@ -39,6 +110,7 @@
 .nav-btn {
   position: absolute;
   top: 20px;
+  cursor: pointer;
 }
 
 .home-hello {

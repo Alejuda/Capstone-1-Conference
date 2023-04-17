@@ -8,6 +8,20 @@
     <title>ArtificialEdge Conference</title>
   </head>
   <body>
+    <header class="nav-container" id="mobile-menu">
+        <nav class="nav-menu">
+            <img id="close-btn" class="close-btn" src="./assets/icons/close.svg" alt="close">
+            <a href="#"><img class="nav-logo" src="./assets/img/logo.png" alt="ArtificialEdge logo"></a>
+            <ul class="nav-list">
+                <li class="list-item lato"><a href="about.html">About</a></li>
+                <li class="list-item lato"><a href="#program">Program</a></li>
+                <li class="list-item lato"><a href="#">Join</a></li>
+                <li class="list-item lato"><a href="#">Sponsor</a></li>
+                <li class="list-item lato"><a href="#">news</a></li>
+            </ul>
+            <a class="nav-campaign lato" href="#">ArtificialEdge Campaign</a>
+        </nav>
+    </header>
     <section class="home-section">
       <img id="nav-btn" class="nav-btn" src="./assets/icons/menu-btn.svg" alt="menu">
       <h3 class="home-hello poppins">"Hello AI innovators!"</h3>
@@ -32,7 +46,7 @@
         </div>
       </div>
     </section>
-    <section class="program-section">
+    <section class="program-section" id="program">
         <h2 class="program-text lato">Main Program</h2>
         <div class="orange-divisor"></div>
         <div class="cards-container">
@@ -84,5 +98,6 @@
         </div>
         <button class="see-more-btn lato">MORE <img src="./assets/icons/arrow.svg" alt=""></button>
     </section>
+    <script src="app.js"></script>
   </body>
 </html> 
