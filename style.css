@@ -39,6 +39,10 @@ ul {
   display: none;
 }
 
+.hide {
+  display: none !important;
+}
+
 /*----------NAV - HAMBURGUER-------------*/
 
 .nav-container {
@@ -316,7 +320,7 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   gap: 30px;
 }
 
@@ -328,9 +332,10 @@ ul {
 
 .speaker-card {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
   gap: 15px;
-  align-items: stretch;
+  width: 100%;
   background-image: url(./assets/icons/speaker-back.svg);
   background-repeat: no-repeat;
   background-size: 50px 50px;
@@ -339,6 +344,7 @@ ul {
 .speaker-img {
   margin: 20px 0 0 20px;
   height: 90px;
+  width: 90px;
 }
 
 .speaker-info {
@@ -450,6 +456,7 @@ ul {
   }
 
   .home-description {
+    font-size: 16px;
     max-width: 500px;
   }
 
@@ -499,8 +506,9 @@ ul {
   }
 
   .speaker-card {
+    max-width: 500px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 15px;
     align-items: stretch;
     background-image: url(./assets/icons/speaker-back.svg);
