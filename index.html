@@ -8,6 +8,28 @@
     <title>ArtificialEdge Conference</title>
   </head>
   <body>
+    <section class="media show-desktop">
+        <div class="media-container">
+            <a href="#"><img class="media-icon" src="./assets/icons/facebook-media.svg" alt=""></a>
+            <a href="#"><img class="media-icon" src="./assets/icons/twitter-media.svg" alt=""></a>
+            <p class="media-text lato">English</p>
+            <p class="media-text lato">My Page</p>
+            <p class="media-text lato">Login</p>
+        </div>
+    </section>
+    <header class="desktop-header show-desktop">
+        <nav class="desktop-nav-container">
+            <a class='desktop-nav-logo' href="#"><img src="./assets/img/logo.png" alt="ArtificialEdge logo"></a>
+            <ul class="desktop-nav-list">
+                <li class="desktop-list-item lato"><a href="about.html">About</a></li>
+                <li class="desktop-list-item lato"><a href="#program">Program</a></li>
+                <li class="desktop-list-item lato"><a href="#">Join</a></li>
+                <li class="desktop-list-item lato"><a href="#sponsor">Sponsor</a></li>
+                <li class="desktop-list-item lato"><a href="#">news</a></li>
+            </ul>
+            <a class="nav-campaign lato" href="#">ArtificialEdge Campaign</a>
+        </nav>
+    </header>
     <header class="nav-container" id="mobile-menu">
         <nav class="nav-menu">
             <img id="close-btn" class="close-btn" src="./assets/icons/close.svg" alt="close">
@@ -16,14 +38,15 @@
                 <li class="list-item lato"><a href="about.html">About</a></li>
                 <li class="list-item lato"><a href="#program">Program</a></li>
                 <li class="list-item lato"><a href="#">Join</a></li>
-                <li class="list-item lato"><a href="#">Sponsor</a></li>
+                <li class="list-item lato"><a href="#sponsor">Sponsor</a></li>
                 <li class="list-item lato"><a href="#">news</a></li>
             </ul>
             <a class="nav-campaign lato" href="#">ArtificialEdge Campaign</a>
         </nav>
     </header>
     <section class="home-section">
-      <img id="nav-btn" class="nav-btn" src="./assets/icons/menu-btn.svg" alt="menu">
+      <img id="nav-btn" class="nav-btn hide-desktop" src="./assets/icons/menu-btn.svg" alt="menu">
+      <div class="center-desktop">
       <h3 class="home-hello poppins">"Hello AI innovators!"</h3>
       <h1 class="home-title lato">
         Exploring the Frontiers of 
@@ -45,6 +68,7 @@
             <p class="location-description poppins">Silicon Valley, CA, United States of America</p>
         </div>
       </div>
+    </div>
     </section>
     <section class="program-section" id="program">
         <h2 class="program-text lato">Main Program</h2>
@@ -98,6 +122,27 @@
         </div>
         <button class="see-more-btn lato">MORE <img src="./assets/icons/arrow.svg" alt=""></button>
     </section>
+
+    <section id="sponsor" class="partners-section">
+
+        <h2 class="section-title lato">Partner</h2>
+        <div class="orange-divisor"></div>
+        <div class="partner-container">
+            <img class="partner-icon" src="./assets/icons/firefox.svg" alt="FireFox">
+            <img class="partner-icon" src="./assets/icons/google.svg" alt="Google">
+            <img class="partner-icon" src="./assets/icons/github.svg" alt="Github">
+            <img class="partner-icon" src="./assets/icons/spacex.svg" alt="SpaceX">
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+        <img class="logo-footer" src="./assets/img/logo-negro.png" alt="logo image">
+        <p class="footer-text lato">© 2023 Artificial Edge. <br> Some Rights Reserved.</p>
+    
+    </footer>
+
     <script src="app.js"></script>
   </body>
 </html> 

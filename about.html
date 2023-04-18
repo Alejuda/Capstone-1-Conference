@@ -8,28 +8,72 @@
     <title>ArtificialEdge Conference</title>
   </head>
   <body>
+    <section class="media show-desktop">
+      <div class="media-container">
+        <a href="#"
+          ><img
+            class="media-icon"
+            src="./assets/icons/facebook-media.svg"
+            alt=""
+        /></a>
+        <a href="#"
+          ><img
+            class="media-icon"
+            src="./assets/icons/twitter-media.svg"
+            alt=""
+        /></a>
+        <p class="media-text lato">English</p>
+        <p class="media-text lato">My Page</p>
+        <p class="media-text lato">Login</p>
+      </div>
+    </section>
+    <header class="desktop-header show-desktop">
+      <nav class="desktop-nav-container">
+        <a class="desktop-nav-logo" href="index.html"
+          ><img src="./assets/img/logo.png" alt="ArtificialEdge logo"
+        /></a>
+        <ul class="desktop-nav-list">
+          <li class="desktop-list-item lato"><a href="#">About</a></li>
+          <li class="desktop-list-item lato"><a href="index.html#program">Program</a></li>
+          <li class="desktop-list-item lato"><a href="#">Join</a></li>
+          <li class="desktop-list-item lato"><a href="index.html#sponsor">Sponsor</a></li>
+          <li class="desktop-list-item lato"><a href="#">news</a></li>
+        </ul>
+        <a class="nav-campaign lato" href="#">ArtificialEdge Campaign</a>
+      </nav>
+    </header>
     <header class="nav-container" id="mobile-menu">
-        <nav class="nav-menu">
-            <img id="close-btn" class="close-btn" src="./assets/icons/close.svg" alt="close">
-            <a href="index.html"><img class="nav-logo" src="./assets/img/logo.png" alt="ArtificialEdge logo"></a>
-            <ul class="nav-list">
-                <li class="list-item lato"><a href="#">About</a></li>
-                <li class="list-item lato"><a href="#program">Program</a></li>
-                <li class="list-item lato"><a href="#">Join</a></li>
-                <li class="list-item lato"><a href="#sponsor">Sponsor</a></li>
-                <li class="list-item lato"><a href="#">news</a></li>
-            </ul>
-            <a class="nav-campaign lato" href="#">ArtificialEdge Campaign</a>
-        </nav>
+      <nav class="nav-menu">
+        <img
+          id="close-btn"
+          class="close-btn"
+          src="./assets/icons/close.svg"
+          alt="close"
+        />
+        <a href="index.html"
+          ><img
+            class="nav-logo"
+            src="./assets/img/logo.png"
+            alt="ArtificialEdge logo"
+        /></a>
+        <ul class="nav-list">
+          <li class="list-item lato"><a href="#">About</a></li>
+          <li class="list-item lato"><a href="index.html#program">Program</a></li>
+          <li class="list-item lato"><a href="#">Join</a></li>
+          <li class="list-item lato"><a href="index.html#sponsor">Sponsor</a></li>
+          <li class="list-item lato"><a href="#">news</a></li>
+        </ul>
+        <a class="nav-campaign lato" href="#">ArtificialEdge Campaign</a>
+      </nav>
     </header>
     <section class="about-section">
       <img
         id="nav-btn"
-        class="nav-btn"
+        class="nav-btn hide-desktop"
         src="./assets/icons/menu-btn.svg"
         alt="menu"
       />
-      <h3 class="about-hello poppins">"Hello AI innovators!"</h3>
+      <h3 class="about-hello poppins hide-desktop">"Hello AI innovators!"</h3>
       <h1 class="about-title lato">
         Exploring the Frontiers of Intellingent Technologies
       </h1>
@@ -50,11 +94,14 @@
     </section>
 
     <section class="logo-section">
-      <h2 class="section-title lato">Artificial Edge Logo</h2>
+      <h2 class="section-title lato">Artificial Edge Conference Logo</h2>
       <div class="orange-divisor"></div>
       <p class="logo-description lato">
-        The logo for the ArtificialEdge Conference was decided by the company
-        members.
+        The logo design for the conference was chosen to be simple and
+        minimalist, relying on the inclusion of the company name to convey
+        confidence and authority in the field of artificial intelligence. This
+        clean design can be effective in terms of the audience's ability to
+        remember the company name and associate it with the conference theme.
       </p>
       <div class="img-container">
         <img
@@ -65,37 +112,40 @@
       </div>
     </section>
     <section class="history-section">
-        <h2 class="section-title lato"> See the past ArtificialEdge Conferences</h2>
-        <div class="orange-divisor"></div>
-        <p class="logo-description lato">
-            Take a look at the past ArtificialEdge Conference wich took place in New York City, and Tokyo.
-        </p>
+      <h2 class="section-title lato">
+        See the past ArtificialEdge Conferences
+      </h2>
+      <div class="orange-divisor"></div>
+      <p class="logo-description lato">
+        Take a look at the past ArtificialEdge Conference wich took place in New
+        York City, and Tokyo.
+      </p>
+      <div class="history-container">
         <div class="history-card nyork">
-            <h3 class="card-year lato">2019</h3>
-            <p class="card-desc lato">ArtificialEdge Conference in New York, USA.</p>
+          <h3 class="card-year lato">2019</h3>
+          <p class="card-desc lato">
+            ArtificialEdge Conference in New York, USA.
+          </p>
         </div>
         <div class="history-card tokyo">
-            <h3 class="card-year lato">2021</h3>
-            <p class="card-desc lato">ArtificialEdge Conference in Tokyo, Japan.</p>
+          <h3 class="card-year lato">2021</h3>
+          <p class="card-desc lato">
+            ArtificialEdge Conference in Tokyo, Japan.
+          </p>
         </div>
-    </section>
-
-    <section id="sponsor" class="partners-section">
-
-        <h2 class="section-title white lato">Partner</h2>
-        <div class="orange-divisor"></div>
-        <div class="partner-container">
-            <img class="partner-icon" src="./assets/icons/firefox.svg" alt="FireFox">
-            <img class="partner-icon" src="./assets/icons/google.svg" alt="Google">
-            <img class="partner-icon" src="./assets/icons/github.svg" alt="Github">
-            <img class="partner-icon" src="./assets/icons/spacex.svg" alt="SpaceX">
-        </div>
-
+      </div>
     </section>
 
     <footer class="footer">
-        <img class="logo-footer" src="./assets/img/logo.png" alt="logo image">
-        <p class="footer-text lato">© 2023 Artificial Edge. <br> Some Rights Reserved.</p>
+      <img
+        class="logo-footer"
+        src="./assets/img/logo-blanco.png"
+        alt="logo image"
+      />
+      <p class="footer-text lato">
+        © 2023 Artificial Edge. <br />
+        Some Rights Reserved.
+      </p>
     </footer>
     <script src="app.js"></script>
   </body>

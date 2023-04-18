@@ -4,6 +4,7 @@
   --orange: #ec5242;
   --dark: #272a31;
   --grey: #d3d3d3;
+  --max-width: 1100px;
 }
 
 * {
@@ -58,6 +59,63 @@ ul {
 
 .show {
   left: 0px;
+}
+
+.show-desktop {
+  display: none;
+}
+
+.media {
+  width: 100%;
+  padding: 5px 20px;
+  background-color: var(--dark);
+}
+
+.media-container {
+  width: 100%;
+  max-width: var(--max-width);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+  margin: auto;
+}
+
+.media-icon {
+  height: 13px;
+}
+
+.media-text {
+  color: #d3d3d3;
+  font-size: 11px;
+}
+
+.desktop-header {
+  width: 100%;
+  padding: 20px 20px;
+  box-shadow: 2px 2px 4px black;
+}
+
+.desktop-nav-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 40px;
+  max-width: var(--max-width);
+  margin: auto;
+}
+
+.desktop-nav-logo {
+  display: flex;
+  place-content: center;
+  margin-right: auto;
+}
+
+.desktop-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .close-btn {
@@ -135,6 +193,7 @@ ul {
   letter-spacing: 1px;
   font-weight: 900;
   margin-bottom: 25px;
+  max-width: 900px;
 }
 
 .about-description {
@@ -186,9 +245,10 @@ ul {
 .img-container {
   border: 1px solid var(--grey);
   width: 100%;
-  padding: 20px;
+  padding: 40px 20px;
   display: flex;
   place-content: center;
+  margin: 30px 0;
 }
 
 .logo-img {
@@ -213,17 +273,29 @@ ul {
   background-image: url(./assets/img/tokyo-effect-2.png);
 }
 
+.history-container {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
 .history-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: calc(100% - 20px);
-  margin: auto 20px;
   padding: 70px 30px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   cursor: pointer;
+  max-width: 400px;
+  margin: auto;
 }
 
 .card-year {
@@ -243,28 +315,10 @@ ul {
   color: white;
 }
 
-.partners-section {
-  background-color: #414246;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  gap: 10px;
-}
-
-.partner-container {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
-}
-
 .footer {
+  margin-top: 50px;
   padding: 30px 0;
-  background-color: white;
+  background-color: #242425;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -277,5 +331,50 @@ ul {
 
 .footer-text {
   font-size: 10px;
-  color: rgb(100, 100, 100);
+  color: white;
+}
+
+/*-------- RESPONSIVE --------*/
+
+@media screen and (min-width: 768px) {
+  .hide-desktop {
+    display:none;
+  }
+
+  .show-desktop {
+    display: flex;
+  }
+
+  .about-title {
+    font-size: 50px;
+  }
+
+  .about-description {
+    max-width: 600px;
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  .logo-description {
+    max-width: 600px;
+  }
+
+  .img-container {
+    max-width: 500px;
+  }
+
+  .history-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .history-card {
+    min-height: 100%;
+    transition: all 200ms;
+    width: 400px;
+  }
+
+  .history-card:hover {
+    filter: saturate(0.15);
+  }
 }
