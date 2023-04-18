@@ -51,8 +51,8 @@ ul {
   width: 100vw;
   max-width: 300px;
   height: 100vh;
-  border-radius: 0 30px 30px 0;
-  background-color: var(--grey);
+  background-color: #272a31ee;
+  backdrop-filter: blur(4px);
   padding: 20px;
   transition: left 100ms;
 }
@@ -141,13 +141,18 @@ ul {
 .nav-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 }
 
 .list-item a {
-  color: var(--dark);
+  color: var(--grey);
   font-size: 25px;
-  font-weight: 800;
+  font-weight: 500;
+}
+
+.active a{
+  color: var(--orange);
+  font-weight: 600;
 }
 
 .nav-campaign {
@@ -156,6 +161,11 @@ ul {
   color: var(--orange);
   padding: 10px 20px;
   font-weight: 600;
+}
+
+.mobile-nav-campaign {
+  color: white;
+  background-color: #ec5242;
 }
 
 /*----------NAV - HAMBURGUER - FINISH-------------*/

@@ -1,11 +1,16 @@
 const hamburguer = document.getElementById('nav-btn');
-const closeButton = document.getElementById('close-btn');
 const navMenu = document.getElementById('mobile-menu');
+
+const closeMenu = document.querySelectorAll('.close-mobile-menu');
+
 
 hamburguer.addEventListener('click', function(e) {
     navMenu.classList.add('show');
 })
 
-closeButton.addEventListener('click', function(e) {
-    navMenu.classList.remove('show');
-});
+Array.from(closeMenu).forEach( (button) => {
+    button.addEventListener('click', function(e) {
+        navMenu.classList.remove('show');
+    });
+}
+);
