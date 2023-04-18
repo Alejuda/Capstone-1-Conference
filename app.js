@@ -64,13 +64,14 @@ const renderSpeakers = function (num) {
     `;
     }
     speakerContainer.innerHTML = speakersInner;
-    seeMoreBtn.classList.add('hide');
     speakersInner = ''
     return speakersInner
 }
 
-
-
+seeMoreBtn.addEventListener('click', function () {
+    renderSpeakers(6);
+    seeMoreBtn.classList.add('hide');
+})
 
 hamburguer.addEventListener("click", function (e) {
   navMenu.classList.add("show");
@@ -84,4 +85,3 @@ Array.from(closeMenu).forEach((button) => {
 
 
 renderSpeakers(2);
-seeMoreBtn.classList.remove('hide');

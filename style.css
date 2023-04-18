@@ -100,12 +100,14 @@ ul {
   border: 3px solid var(--orange);
   color: var(--orange);
   padding: 10px 20px;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 12px;
 }
 
 .mobile-nav-campaign {
   color: white;
   background-color: #ec5242;
+  font-weight: 600;
 }
 
 /*----------NAV - HAMBURGUER - FINISH-------------*/
