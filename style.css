@@ -195,7 +195,7 @@ ul {
   background-clip: text;
   background-size: cover;
   background-position: top;
-  filter: hue-rotate(180deg) contrast(1.1);
+  filter: hue-rotate(180deg) contrast(1.2) brightness(0.9);
   font-size: 29px;
   letter-spacing: 1px;
   font-weight: 900;
@@ -357,7 +357,7 @@ ul {
 .speaker-description {
   color: var(--orange);
   font-style: italic;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 600;
 }
 
@@ -369,7 +369,7 @@ ul {
 
 .speaker-thematic {
   color: rgb(75, 75, 75);
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 400;
 }
 
