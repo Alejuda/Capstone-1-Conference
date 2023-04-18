@@ -412,7 +412,12 @@ ul {
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 25px;
+  gap: 30px;
+}
+
+.partner-icon {
+  filter: saturate(0);
+  height: 50px;
 }
 
 .footer {
@@ -508,7 +513,7 @@ ul {
   }
 
   .speaker-card {
-    max-width: 500px;
+    max-width: 350px;
     display: flex;
     justify-content: flex-start;
     gap: 15px;
