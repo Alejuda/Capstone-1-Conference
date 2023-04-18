@@ -468,9 +468,11 @@ ul {
   }
 
   .cards-container {
+    justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: stretch;
+    gap: 25px;
   }
 
   .card {
