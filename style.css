@@ -201,11 +201,21 @@ ul {
 
 .home-title {
   width: 100%;
-  color: var(--orange);
+  color: transparent;
+  -webkit-text-fill-color: transparent;
   font-size: 29px;
   letter-spacing: 1px;
   font-weight: 900;
   margin-bottom: 25px;
+}
+
+.home-title-container {
+  width: 100%;
+  -webkit-background-clip: text;
+  background-image: url(./assets/img/title-img.jpeg);
+  background-size: cover;
+  background-position: top;
+  filter: hue-rotate(180deg) contrast(1.2) brightness(0.9);
 }
 
 .home-description {
