@@ -301,7 +301,7 @@ ul {
 
 .card-description {
   color: #d3d3d3;
-  font-size: 11px;
+  font-size: 12px;
   max-width: 46%;
 }
 
@@ -347,13 +347,13 @@ ul {
   gap: 15px;
   width: 100%;
   max-width: 400px;
-  background-image: url(./assets/icons/speaker-back.svg);
+  background-image: url(./assets/icons/cheese-board.svg);
   background-repeat: no-repeat;
   background-size: 50px 50px;
 }
 
 .speaker-img {
-  margin: 20px 0 0 20px;
+  margin: 15px 0 0 15px;
   height: 90px;
   width: 90px;
 }
@@ -367,14 +367,14 @@ ul {
 }
 
 .speaker-name {
-  font-size: 15px;
+  font-size: 16px;
   color: var(--dark);
 }
 
 .speaker-description {
   color: var(--orange);
   font-style: italic;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -386,7 +386,7 @@ ul {
 
 .speaker-thematic {
   color: rgb(75, 75, 75);
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 400;
 }
 
@@ -506,7 +506,7 @@ ul {
   }
 
   .card-description {
-    font-size: 14px;
+    font-size: 16px;
     min-width: 100%;
     text-align: center;
   }
@@ -528,8 +528,11 @@ ul {
     justify-content: flex-start;
     gap: 15px;
     align-items: stretch;
-    background-image: url(./assets/icons/speaker-back.svg);
     background-repeat: no-repeat;
     background-size: 50px 50px;
+  }
+
+  .speaker-name {
+    font-size: 16px;
   }
 }

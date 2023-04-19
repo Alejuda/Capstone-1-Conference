@@ -52,7 +52,7 @@ let speakersInner = '';
 function renderSpeakers(num) {
   for (let i = 0; i < num; i += 1) {
     speakersInner += `
-        <div class="speaker-card">
+        <article class="speaker-card">
             <img class="speaker-img" src="${speakers[i].img}" alt="${`${speakers[i].name} image`}">
             <div class="speaker-info">
                 <h3 class="speaker-name lato">${speakers[i].name}</h3>
@@ -60,7 +60,7 @@ function renderSpeakers(num) {
                 <div class="divisor-grey"></div>
                 <p class="speaker-thematic roboto">"${speakers[i].talkAbout}"</p>
             </div>
-        </div>
+        </article>
     `;
   }
   speakerContainer.innerHTML = speakersInner;
@@ -84,3 +84,19 @@ Array.from(closeMenu).forEach((button) => {
 });
 
 renderSpeakers(2);
+
+let width = window.innerWidth;
+if (window.innerWidth >= 768){
+  renderSpeakers(6);
+} else  {
+  renderSpeakers(2);
+}
+
+let desktop = false
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth >= 768 && !desktop) {
+    renderSpeakers(6);
+    desktop = true;
+  }
+});

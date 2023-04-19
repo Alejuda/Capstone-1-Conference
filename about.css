@@ -62,10 +62,6 @@ ul {
   left: 0;
 }
 
-.show-desktop {
-  display: none;
-}
-
 .media {
   width: 100%;
   padding: 5px 20px;
@@ -222,7 +218,7 @@ ul {
 .contact-text {
   color: var(--dark);
   text-align: center;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 150%;
   font-weight: 600;
 }
@@ -231,7 +227,7 @@ ul {
   border-bottom: 1px solid var(--dark);
   color: var(--dark);
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .logo-section {
@@ -250,7 +246,7 @@ ul {
 
 .logo-description {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 16px;
   text-align: center;
   color: #5f5f5f;
 }
@@ -295,13 +291,14 @@ ul {
   justify-content: center;
   gap: 10px;
   margin-top: 20px;
+  overflow: hidden;
 }
 
 .history-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: calc(100% - 20px);
+  width: calc(100% - 20px);;
   padding: 70px 30px;
   background-repeat: no-repeat;
   background-position: center;
@@ -319,7 +316,7 @@ ul {
 
 .card-desc {
   color: white;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 400;
   text-align: center;
 }
@@ -328,10 +325,35 @@ ul {
   color: white;
 }
 
-.footer {
+.partners-section {
+  background-color: #414246;
   margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+}
+
+.partner-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.partner-icon {
+  filter: saturate(0);
+  height: 50px;
+}
+
+.footer {
+  
   padding: 30px 0;
-  background-color: #242425;
+  background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -343,8 +365,12 @@ ul {
 }
 
 .footer-text {
-  font-size: 10px;
-  color: white;
+  font-size: 12px;
+  color: var(--dark);
+}
+
+.show-desktop {
+  display: none;
 }
 
 /* -------- RESPONSIVE -------- */
@@ -383,11 +409,21 @@ ul {
 
   .history-card {
     min-height: 100%;
+    min-width: 370px;
     transition: all 200ms;
     width: 400px;
   }
 
   .history-card:hover {
     filter: saturate(0.15);
+  }
+  
+  .footer {
+    background-color: var(--dark);
+    margin-top: 50px;
+  }
+
+  .footer-text {
+    color: var(--grey);
   }
 }
