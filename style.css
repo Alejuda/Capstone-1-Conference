@@ -43,7 +43,7 @@ ul {
   display: none !important;
 }
 
-/*----------NAV - HAMBURGUER-------------*/
+/* ----------NAV - HAMBURGUER------------- */
 
 .nav-container {
   position: fixed;
@@ -60,7 +60,7 @@ ul {
 }
 
 .show {
-  left: 0px;
+  left: 0;
 }
 
 .close-btn {
@@ -111,7 +111,7 @@ ul {
   font-weight: 600;
 }
 
-/*----------NAV - HAMBURGUER - FINISH-------------*/
+/* ----------NAV - HAMBURGUER - FINISH------------- */
 
 .media {
   width: 100%;
@@ -201,18 +201,11 @@ ul {
 
 .home-title {
   width: 100%;
-  color: transparent;
-  background-image: url(./assets/img/title-img.jpeg);
-  background-clip: text;
-  background-size: cover;
-  background-position: top;
-  filter: hue-rotate(180deg) contrast(1.2) brightness(0.9);
+  color: var(--orange);
   font-size: 29px;
   letter-spacing: 1px;
   font-weight: 900;
   margin-bottom: 25px;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .home-description {
@@ -333,7 +326,7 @@ ul {
 
 .speakers-title {
   font-size: 18px;
-  font-weight: 400px;
+  font-weight: 400;
   color: var(--dark);
 }
 
@@ -392,7 +385,7 @@ ul {
   width: 100%;
   padding: 10px;
   max-width: 300px;
-  border-radius: none;
+  border-radius: 0;
   border: 1px solid var(--grey);
   background-color: transparent;
   display: flex;
@@ -448,7 +441,7 @@ ul {
   color: white;
 }
 
-/*-------RESPONSIVE-------*/
+/* -------RESPONSIVE------- */
 
 @media screen and (min-width: 768px) {
   .show-desktop {
@@ -484,7 +477,6 @@ ul {
   .card {
     flex-direction: column;
     align-items: stretch;
-    height: 100%;
     width: auto;
     max-width: 200px;
     height: 200px;
@@ -516,7 +508,7 @@ ul {
 
   .speakers-title {
     font-size: 18px;
-    font-weight: 400px;
+    font-weight: 400;
     color: var(--dark);
   }
 

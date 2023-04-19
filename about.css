@@ -42,7 +42,7 @@ ul {
   margin-bottom: 20px;
 }
 
-/*----------NAV - HAMBURGUER-------------*/
+/* ----------NAV - HAMBURGUER------------- */
 
 .nav-container {
   position: fixed;
@@ -59,7 +59,7 @@ ul {
 }
 
 .show {
-  left: 0px;
+  left: 0;
 }
 
 .show-desktop {
@@ -151,7 +151,7 @@ ul {
   font-weight: 500;
 }
 
-.active a{
+.active a {
   color: var(--orange);
   font-weight: 600;
 }
@@ -171,7 +171,7 @@ ul {
   font-weight: 600;
 }
 
-/*----------NAV - HAMBURGUER - FINISH-------------*/
+/* ----------NAV - HAMBURGUER - FINISH------------- */
 
 .about-section {
   padding: 90px 20px;
@@ -347,11 +347,11 @@ ul {
   color: white;
 }
 
-/*-------- RESPONSIVE --------*/
+/* -------- RESPONSIVE -------- */
 
 @media screen and (min-width: 768px) {
   .hide-desktop {
-    display:none;
+    display: none;
   }
 
   .show-desktop {
