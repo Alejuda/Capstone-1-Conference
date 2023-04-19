@@ -168,6 +168,8 @@ Thanks for checking out my AI conference project! Please feel free to reach out 
 
 I want to give credit to [Cindy Shin](https://www.behance.net/adagio07) for providing the template used in this project. Thank you, Cindy, for your contribution to this project's design!
 
+You can see the licence [here](https://creativecommons.org/licenses/by-nc/4.0/legalcode)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
