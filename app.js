@@ -85,14 +85,13 @@ Array.from(closeMenu).forEach((button) => {
 
 renderSpeakers(2);
 
-let width = window.innerWidth;
-if (window.innerWidth >= 768){
+if (window.innerWidth >= 768) {
   renderSpeakers(6);
-} else  {
+} else {
   renderSpeakers(2);
 }
 
-let desktop = false
+let desktop = false;
 
 window.addEventListener('resize', () => {
   if (window.innerWidth >= 768 && !desktop) {
