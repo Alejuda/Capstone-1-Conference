@@ -65,7 +65,8 @@ ul {
 
 .close-btn {
   position: absolute;
-  top: 20px;
+  top: 24px;
+  left: 24px;
   cursor: pointer;
 }
 
@@ -183,7 +184,11 @@ ul {
 }
 
 .nav-btn {
-  position: absolute;
+  position: fixed;
+  z-index: 499;
+  border-radius: 3px;
+  padding: 4px;
+  background-color: #d3d3d352;
   top: 20px;
   cursor: pointer;
 }
@@ -338,6 +343,7 @@ ul {
   align-items: center;
   gap: 15px;
   width: 100%;
+  max-width: 400px;
   background-image: url(./assets/icons/speaker-back.svg);
   background-repeat: no-repeat;
   background-size: 50px 50px;
@@ -515,8 +521,8 @@ ul {
   }
 
   .speaker-card {
-    max-width: 350px;
     display: flex;
+    max-width: 45%;
     justify-content: flex-start;
     gap: 15px;
     align-items: stretch;
