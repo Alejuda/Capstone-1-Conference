@@ -69,8 +69,13 @@ function renderSpeakers(num) {
 }
 
 seeMoreBtn.addEventListener('click', () => {
-  renderSpeakers(6);
-  seeMoreBtn.classList.add('hide');
+  if (seeMoreBtn.innerText === 'MORE') {
+    seeMoreBtn.innerText = 'LESS';
+    renderSpeakers(6);
+  } else {
+    seeMoreBtn.innerText = 'MORE';
+    renderSpeakers(2);
+  }
 });
 
 hamburguer.addEventListener('click', () => {
@@ -82,8 +87,6 @@ Array.from(closeMenu).forEach((button) => {
     navMenu.classList.remove('show');
   });
 });
-
-renderSpeakers(2);
 
 if (window.innerWidth >= 768) {
   renderSpeakers(6);
